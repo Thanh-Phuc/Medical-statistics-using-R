@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Medical Statistics using R</title>
+<meta name="description" content="Course materials for medical statistics using R — lecture notes and worked examples.">
+<style>
+  :root {
+    --bg: #f7f9fc;
+    --card: #ffffff;
+    --ink: #1c2530;
+    --muted: #5b6b7c;
+    --line: #e3e9f0;
+    --accent: #0d6efd;
+    --accent-soft: #e7f0ff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.6;
+  }
+  header {
+    background: linear-gradient(135deg, #0d3b66 0%, #1565c0 100%);
+    color: #fff;
+    padding: 56px 24px 64px;
+  }
+  .wrap { max-width: 960px; margin: 0 auto; }
+  .brand { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+  .brand img { height: 56px; width: auto; background: #fff; border-radius: 10px; padding: 6px 10px; }
+  header h1 { margin: 0; font-size: 2rem; letter-spacing: -0.02em; }
+  header p { margin: 12px 0 0; max-width: 62ch; color: #dbe8f7; }
+  main { max-width: 960px; margin: -32px auto 64px; padding: 0 24px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(16, 42, 74, 0.06);
+    padding: 28px;
+  }
+  .card h2 { margin: 0 0 4px; font-size: 1.15rem; }
+  .card .sub { margin: 0 0 20px; color: var(--muted); font-size: 0.95rem; }
+  ul.lessons { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+  @media (min-width: 700px) { ul.lessons { grid-template-columns: 1fr 1fr; } }
+  ul.lessons a {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    text-decoration: none;
+    color: var(--ink);
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 14px 16px;
+    transition: border-color .15s, background .15s, transform .15s;
+  }
+  ul.lessons a:hover { border-color: var(--accent); background: var(--accent-soft); transform: translateY(-1px); }
+  .num { color: var(--accent); font-weight: 700; font-variant-numeric: tabular-nums; min-width: 1.6em; }
+  .pending { display: flex; align-items: baseline; gap: 12px; padding: 14px 16px; border: 1px dashed var(--line); border-radius: 10px; color: var(--muted); }
+  footer { max-width: 960px; margin: 0 auto 56px; padding: 0 24px; color: var(--muted); font-size: 0.85rem; }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <img src="KRG_elegant_logo_for_light_BG.png" alt="KRG">
+      <h1>Medical Statistics using R</h1>
+    </div>
+    <p>Course notes and worked examples for using the R language for statistical analysis in medicine. Follow along in RStudio with the accompanying <code>.Rmd</code> source files.</p>
+  </div>
+</header>
+<main>
+  <div class="card">
+    <h2>Course chapters</h2>
+    <p class="sub">Rendered lecture notes — click any chapter to open it.</p>
+    <ul class="lessons">
+      <li><a href="01_Introduction_to_R_and_RStudio.html"><span class="num">01</span><span>Introduction to R and RStudio</span></a></li>
+      <li><a href="02_Working_with_data.html"><span class="num">02</span><span>Working with data</span></a></li>
+      <li><a href="03_Summary_statistics.html"><span class="num">03</span><span>Summary statistics</span></a></li>
+      <li><a href="04_Inbuilt_R_plots.html"><span class="num">04</span><span>The built-in R plots</span></a></li>
+      <li><a href="05_Sampling_distributions.html"><span class="num">05</span><span>Sampling distributions</span></a></li>
+      <li><a href="06_A_parametric_comparison_of_means.html"><span class="num">06</span><span>A parametric comparison of means</span></a></li>
+      <li><a href="07_Correlation_and_linear_models.html"><span class="num">07</span><span>Correlation and linear regression models</span></a></li>
+      <li><a href="08_Assumptions_for_parametric_tests.html"><span class="num">08</span><span>Assumptions for parametric tests</span></a></li>
+      <li><a href="09_Nonparametric_tests.html"><span class="num">09</span><span>Non-parametric tests</span></a></li>
+      <li><a href="10_Analyzing_categorical_data.html"><span class="num">10</span><span>Analyzing categorical data</span></a></li>
+      <li class="pending"><span class="num">11</span><span>Logistic regression <em>(notes in progress)</em></span></li>
+    </ul>
+  </div>
+</main>
+<footer>
+  <p>Source and <code>.Rmd</code> files: <a href="https://github.com/Thanh-Phuc/Medical-statistics-using-R">github.com/Thanh-Phuc/Medical-statistics-using-R</a></p>
+</footer>
+</body>
+</html>
